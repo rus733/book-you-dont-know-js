@@ -1,13 +1,17 @@
+//методы работы с элементами DOM дерева
+
 const lists = document.querySelectorAll(".list"); //- тут 2 списка
 const elems = document.querySelectorAll(".elem"); // этопервый список с 6 элементами
 console.log(lists);
 console.log(elems);
+
 //удалим 2 и 4 элементы  из НОДЫ класса .elem
 
 //elems[2].remove();
 //elems[4].remove();
 
 //удалим 2 и 4 элементы  dj второй список с классом .list
+
 //append ставит в конец списка
 //lists[1].append(elems[2]);
 //lists[1].append(elems[3]);

@@ -1,19 +1,20 @@
 // Домашнее задание 10.Тема Работа с элементами DOM.
 
-const books = document.querySelectorAll(".book");
-const body = document.querySelector("body");
+const booksALLOrder = document.querySelectorAll(".book");
+const bodyProperties = document.querySelector("body");
 const links = document.getElementsByTagName("a");
+const advertBlock = document.querySelector(".adv");
 
 // 1.Восстановить порядок книг.
 
-books[0].before(books[1]);
-books[3].before(books[4]);
-books[3].before(books[2]);
-books[2].before(books[3]);
-books[2].before(books[5]);
+booksALLOrder[0].before(booksALLOrder[1]);
+booksALLOrder[3].before(booksALLOrder[4]);
+booksALLOrder[3].before(booksALLOrder[2]);
+booksALLOrder[2].before(booksALLOrder[3]);
+booksALLOrder[2].before(booksALLOrder[5]);
 
 // 2. Заменить картинку заднего фона на другую из папки image
-body.style.backgroundImage = "url(./image/you-dont-know-js.jpg)";
+bodyProperties.style.backgroundImage = "url(./image/you-dont-know-js.jpg)";
 
 // 3.Исправить заголовок в книге 3
 
@@ -21,10 +22,9 @@ links[2].textContent = "Книга 3. this и Прототипы Объекто�
 
 // 4. убираем рекламу
 
-const adv = document.querySelector(".adv");
-adv.classList.toggle("adv");
-//второй вариант
-//adv.classList.remove("adv");
+advertBlock.classList.toggle("adv"); // выключил
+//и второй вариант
+//adv.classList.remove("adv"); //удалил
 
 // 5. Восстановить порядок глав во второй и пятой книге (внимательно инспектируйте индексы элементов, поможет dev tools)
 

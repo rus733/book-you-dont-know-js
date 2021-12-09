@@ -29,7 +29,6 @@ advertBlock.classList.toggle("adv"); // выключил
 // 5. Восстановить порядок глав во второй и пятой книге (внимательно инспектируйте индексы элементов, поможет dev tools)
 
 const lists = document.querySelectorAll("ul");
-const listsItem = document.querySelectorAll("li");
 
 lists[1].children[4].before(lists[1].children[6]);
 lists[1].children[5].before(lists[1].children[8]);

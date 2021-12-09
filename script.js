@@ -4,6 +4,7 @@ const booksALLOrder = document.querySelectorAll(".book");
 const bodyProperties = document.querySelector("body");
 const links = document.getElementsByTagName("a");
 const advertBlock = document.querySelector(".adv");
+const newElem = document.createElement("li");
 
 // 1.Восстановить порядок книг.
 
@@ -40,7 +41,6 @@ lists[4].children[8].after(lists[4].children[6]);
 
 // 6. в шестой книге добавить главу “Глава 8: За пределами ES6” и поставить её в правильное место
 
-const newElem = document.createElement("li");
 newElem.textContent = "Глава 8: За пределами ES6";
 lists[5].append(newElem); //добавим его в список
 lists[5].children[8].after(lists[5].children[10]);

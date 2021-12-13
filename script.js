@@ -1,7 +1,8 @@
-// Домашнее задание 10.Тема Работа с элементами DOM.
+// Домашнее задание 10. принято( вснес неск исправлений )
+//Тема Работа с элементами DOM.
 
 const booksALLOrder = document.querySelectorAll('.book');
-const bodyProperties = document.querySelector('body');
+//const bodyProperties = document.querySelector('body');
 const links = document.getElementsByTagName('a');
 const advertBlock = document.querySelector('.adv');
 const newElem = document.createElement('li');
@@ -15,7 +16,7 @@ booksALLOrder[2].before(booksALLOrder[3]);
 booksALLOrder[2].before(booksALLOrder[5]);
 
 // 2. Заменить картинку заднего фона на другую из папки image
-bodyProperties.style.backgroundImage = 'url(./image/you-dont-know-js.jpg)';
+document.body.style.backgroundImage = 'url(./image/you-dont-know-js.jpg)';
 
 // 3.Исправить заголовок в книге 3
 
@@ -43,4 +44,5 @@ lists[4].children[8].after(lists[4].children[6]);
 
 newElem.textContent = 'Глава 8: За пределами ES6';
 lists[5].append(newElem); //добавим его в список
+//lists[5].appendChild(document.createElement('li')).textContent = 'Глава 8: За пределами ES6'; // можно и так
 lists[5].children[8].after(lists[5].children[10]);

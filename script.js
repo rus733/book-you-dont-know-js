@@ -1,4 +1,4 @@
-// Домашнее задание 10. принято
+// Домашнее задание 10. принято( вснес неск исправлений )
 //Тема Работа с элементами DOM.
 
 const booksALLOrder = document.querySelectorAll('.book');
@@ -44,4 +44,5 @@ lists[4].children[8].after(lists[4].children[6]);
 
 newElem.textContent = 'Глава 8: За пределами ES6';
 lists[5].append(newElem); //добавим его в список
+//lists[5].appendChild(document.createElement('li')).textContent = 'Глава 8: За пределами ES6'; // можно и так
 lists[5].children[8].after(lists[5].children[10]);

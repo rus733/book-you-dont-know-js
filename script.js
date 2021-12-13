@@ -2,7 +2,7 @@
 //Тема Работа с элементами DOM.
 
 const booksALLOrder = document.querySelectorAll('.book');
-const bodyProperties = document.querySelector('body');
+//const bodyProperties = document.querySelector('body');
 const links = document.getElementsByTagName('a');
 const advertBlock = document.querySelector('.adv');
 const newElem = document.createElement('li');
@@ -16,7 +16,7 @@ booksALLOrder[2].before(booksALLOrder[3]);
 booksALLOrder[2].before(booksALLOrder[5]);
 
 // 2. Заменить картинку заднего фона на другую из папки image
-bodyProperties.style.backgroundImage = 'url(./image/you-dont-know-js.jpg)';
+document.body.style.backgroundImage = 'url(./image/you-dont-know-js.jpg)';
 
 // 3.Исправить заголовок в книге 3
 
